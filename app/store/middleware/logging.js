@@ -1,8 +1,8 @@
 /* eslint-disable */
 const loggingMiddleware = (store : Object) => (next : Function) => (action : Object) => {
-  console.info(`INFO: Dispatching a ${action.type} action with payload:`, action.payload);
+  console.info('%cINFO:', 'color: yellow', `Dispatching a ${action.type} action with payload:`, action.payload);
   const result = next(action);
-  console.debug('Next State:', store.getState());
+  console.info('%cNext State:','color: cyan', store.getState());
   return result;
 };
 
