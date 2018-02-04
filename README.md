@@ -28,9 +28,4 @@ react-native run-android
 * Go to [http://localhost:3000/](http://localhost:3000/)
 * Page should auto-reload on code changes (due to HMR)
 
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
 Brought to you by Jarret Moses
