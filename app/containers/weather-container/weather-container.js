@@ -5,9 +5,9 @@ import WeatherComponent from '../../components/weather-component/weather-compone
 import { getWeatherSelector } from '../../reducers/weather-reducer';
 import { fetchData } from '../../actions/fetch-data/fetch-data';
 
-const mapStateToProps = (state : Object) => getWeatherSelector(state);
+const mapStateToProps = (state: Object) => getWeatherSelector(state);
 
-const mapDispatchToProps = (dispatch : Function) => ({
+const mapDispatchToProps = (dispatch: Function) => ({
   fetchData: () => dispatch(fetchData()),
 });
 

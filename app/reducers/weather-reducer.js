@@ -12,9 +12,9 @@ const initialState = {
   error: false,
 };
 
-export const getWeatherSelector = (state : Object) => ({ ...state.weather });
+export const getWeatherSelector = (state: Object) => ({ ...state.weather });
 
-const weatherReducer = (state : Object = initialState, action : Object) => {
+const weatherReducer = (state: Object = initialState, action: Object) => {
   switch (action.type) {
     case FETCH_DATA_SUCCESS: {
       return {

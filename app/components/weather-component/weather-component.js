@@ -10,10 +10,10 @@ import {
 import styles from './styles';
 
 type Props = {
-  error : boolean,
-  isLoading : boolean,
-  weatherInfo : Object,
-  fetchData : Function,
+  error: boolean,
+  isLoading: boolean,
+  weatherInfo: Object,
+  fetchData: Function,
 }
 
 const getErrorMessage = () => (
@@ -35,7 +35,7 @@ const getWeatherInfo = (weatherInfo) => {
   );
 };
 
-const WeatherComponent = (props : Props) => {
+const WeatherComponent = (props: Props) => {
   const {
     isLoading,
     error,
