@@ -7,7 +7,7 @@
     "start-reset": "npm run start -- --reset-cache",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
-    "flow": "flow; test $? -eq 0"
+    "flow": "glow"
   },
   "dependencies": {
     "react": "16.2.0",
@@ -27,12 +27,18 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-react-native": "^3.2.1",
-    "flow-bin": "^0.64.0",
+    "flow-bin": "^0.61.0",
+    "glow": "^1.1.2",
     "jest": "22.1.4",
+    "pre-commit": "^1.2.2",
     "react-test-renderer": "16.2.0"
   },
   "jest": {
     "preset": "react-native"
   },
+  "precommit": [
+    "lint",
+    "flow"
+  ],
   "license": "MIT"
 }

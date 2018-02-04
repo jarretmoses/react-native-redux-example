@@ -29,11 +29,9 @@ const getWeatherInfo = (weatherInfo) => {
     : 'No Weather Info Available (Make sure you provided a valid API key';
 
   return (
-    <View style={styles.weatherInfoContainer}>
-      <Text style={styles.weatherInfoText}>
-        {info}
-      </Text>
-    </View>
+    <Text style={styles.weatherInfoText}>
+      {info}
+    </Text>
   );
 };
 
