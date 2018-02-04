@@ -15,5 +15,6 @@ export default StyleSheet.create({
   weatherInfoText: {
     textAlign: 'center',
     paddingVertical: 6,
+    paddingHorizontal: 40,
   },
 });

@@ -4,7 +4,7 @@ import {
   FETCH_DATA_ERROR,
   FETCH_DATA_REQUEST,
   FETCH_DATA_SUCCESS,
-} from '../constants/action-names';
+} from '../constants/action-types';
 
 const initialState = {
   weatherInfo: {},

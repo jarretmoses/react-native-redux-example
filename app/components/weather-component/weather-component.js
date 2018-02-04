@@ -24,10 +24,14 @@ const getErrorMessage = () => (
 
 const getWeatherInfo = (weatherInfo) => {
   const { summary, temperature } = weatherInfo;
+  const info = temperature
+    ? `${Math.floor(temperature)} deg, ${summary}`
+    : 'No Weather Info Available (Make sure you provided a valid API key';
+
   return (
     <View style={styles.weatherInfoContainer}>
       <Text style={styles.weatherInfoText}>
-        {`${Math.floor(temperature)} deg, ${summary}`}
+        {info}
       </Text>
     </View>
   );
