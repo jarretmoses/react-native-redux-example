@@ -1,0 +1,11 @@
+node_modules/
+
+.*.swp
+.idea/
+.DS_Store
+.vscode/
+npm-debug.log
+jsconfig.json
+spec/
+coverage/
+flow/
