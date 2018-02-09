@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import WeatherContainer from './containers/weather-container/weather-container';
 
-// Store & Router
 const store = configureStore({});
 
 const app = () => (
